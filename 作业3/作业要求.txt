@@ -1,0 +1,29 @@
+1．定义一个日期类 Date，包括年、月、日等私有数据成员。要求为所定义的Date类中设计如下重载运算符函数：
+Date operator+(int days); 返回一日期加天数days后得到的日期
+Date operator-(int days); 返回一日期减去天数days后得到的日期
+int operator-(Date &b); 返回两日期相差的天数
+
+2．编程计算正方体、圆柱体和球的表面积和体积。要求抽象出一个公共的基类Body，把它作为抽象类，在该类中定义求表面积和体积的纯虚函数。抽象类中定义一个数据成员data，它可以作为球的半径、正方体的边长或圆柱体低面圆的半径。由这个抽象类派生出描述球、正方体和圆柱的3个具体类，在这3个类中都有计算表面积和体积的函数的具体实现
+
+3．已知                                                                    
+void Sort(int a[],int size);
+void Sort(double a[],int size);
+是一个函数模板的两个实例，其功能是将数组a中的前size个元素按从小到大顺序排列。试设计这个函数模板。
+
+
+4．设有如下的类声明：
+class  Test
+{
+public:
+  void SetData1(int val) { data1=val; }
+  void SetData2(double val) {data2=val: }
+  int GetData1()  { return data1; }
+  double GetData2() { return data2; }
+private:
+  int data1;
+  double  data2;
+}
+试将此类声明改为类模板声明，使得数据成员data1和data2可以是任何类型。
+
+5. 编写程序，重载运算符“<<”和“>>”，使用户能直接输入和输出复数。
+
